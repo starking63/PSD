@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sample</title>
+  <!-- BEGIN STYLESHEETS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- END STYLESHEETS -->
+</head>
+
+<body>
+<!-- Main Body -->
+  <div class="row main_container">
+    <!-- Left container for Desktop -->
+    <div class="col-lg-6 container-left">
+      <!-- Logo Image for Desktop -->
+      <div class="logo">
+        <img src="img/logo.png" alt="LOGO">
+      </div>
+      <!--  Google Title, Description and Image-->
+      <div class="google">
+        <div class="title">Städtjänster anpassade för dig</div>
+        <div class="description">
+            Med kollektivavtal, kvalitetsgaranti och erfarna städare har vi lyckats bli den<br>uppstickare som branschen saknat.  Vi arbetar efter dina behov<br>och ser fram emot göra din vardag till en fröjd.
+        </div>
+        <div class="image">
+          <img src="img/google.png" alt="">
+        </div>
+      </div>
+      <!-- Google Title and Description for Mobile -->
+      <div class="google_mobile">
+        <div class="title">Städtjänster anpassade<br>för dig</div>
+        <div class="description">Med kollektivavtal, erfarna städerskor<br>och kvalitetsgaranti ger vi dig den<br>hjälp du önskar av din städfirma</div>
+      </div>
+      <!-- Insert Info -->
+      <div class="info_content">
+        <div class="info_box">
+          <!-- Insert Location Info-->
+          <div class="dropup" id="info_location">
+            <div class="btn btn-secondary dropdown-toggle input_info" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="image"><img src="img/location.png" alt=""><span id="location">Område</span></span>
+              <span class="info_ok"><img src="img/ok.png" alt=""></span>
+            </div>
+            <div class="dropdown-menu" x-placement="top-start">
+              <a href="#" class="dropdown-item"><button class="info_item">Stockholm Syd</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">Stockholm Norr</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">Stockholm</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">Nacka</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">Lidingö</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">Göteborg</button></a>
+            </div>
+          </div>
+          <!-- Insert Clean Info -->
+          <div class="dropup" id="info_clean">
+            <div class="btn btn-secondary dropdown-toggle input_info" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="image"><img src="img/clean.png" alt=""><span id="clean">Städtyp</span></span>
+              <span class="info_ok"><img src="img/ok.png" alt=""></span>
+            </div>
+            <div class="dropdown-menu" x-placement="top-start">
+              <a href="#" class="dropdown-item"><button class="info_item">Städabonnemang</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">Enstaka städtillfälle</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">FlyttstVdning</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">StorstVdning</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">Företagsstädning</button></a>
+            </div>
+          </div>
+          <!-- Insert Home Info -->
+          <div class="dropup" id="info_home">
+            <div class="btn btn-secondary dropdown-toggle input_info" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="image"><img src="img/expand.png" alt=""><span id="home">Bostadens storlek</span></span>
+              <span class="info_ok"><img src="img/ok.png" alt=""></span>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item"><button class="info_item">0-40kvm</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">40-60kvm</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">60-80kvm</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">80-100kvm</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">100-150kvm</button></a>
+              <a href="#" class="dropdown-item"><button class="info_item">150-200kvm</button></a>
+            </div>
+          </div>
+          <!-- Insert Button -->
+          <button id="info_button">SE LEDIGA TIDER</button>
+        </div>
+      </div>
+      
+      <!-- Link -->
+      <div class="link">
+        <div class="d-flex justify-content-center">
+          <a href="">Boka hembesök</a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#">Städabonnemang</a>
+          <a href="#">Storstädning</a>
+          <a href="#">Flyttstädning</a>
+          <a href="#">Företagsstädning</a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="#">Kvalitetsgaranti</a>
+            <a href="#">Ingen bindningtid</a>
+        </div>
+      </div>
+    </div>
+    <!--right container for Desktop-->
+    <div class="col-lg-6 container-right">
+      <!--navbar start-->
+      <nav class="navbar navbar-expand-lg" id="header_nav">
+        <!-- Hamberger Button for Mobile -->
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <img src="img/hamberg.png" class="navbar-toggler-icon"></img>
+        </button>
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse navbar-left" id="collapsibleNavbar">
+          <ul class="nav navbar-nav ml-auto" id="nav_menu">
+            <li class="nav-item dropdown" id="drop_down">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Städning</a>
+              <!-- Sub Menu -->
+              <ul class="dropdown-menu" x-placement="top-start">
+                <li><span><a href="#">Städabonnemang</a></span>
+                  <span><a href="#">Enstaka hemstädning</a></span>
+                  <span><a href="#">Storstädning</a></span>
+                  <span><a href="#">Flyttstädning</a></span></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Företag</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vanliga frågor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kvalitetsgaranti</a>
+            </li>
+            <li class="nav-item bg-primary">
+              <a class="nav-link text-white nav_book" href="#">BOKA</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Nav Menu For Mobile-->
+       <!--Navbar-->
+      <nav class="navbar navbar-light amber lighten-4 mb-4" id="mobile_nav">
+        <!-- Logo Image for Mobile -->
+        <a class="navbar-brand" id="mobile_nav_brand" href="#"><img src="img/logo-mobile.png" alt="LOGO"></a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" id="mobile_nav_hamgergerIcon" type="button">
+          <div id="animated-icon"><span></span><span></span><span></span><span></span></div>
+        </button>
+        <!-- Collapsible content -->
+        <div id="navbarSupportedContent">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#">
+                <div class="nav-item dropdown" id="drop_down">
+                  <a class="nav-link dropdown-toggle" id="toogle_subMenu" data-toggle="dropdown" href="#">Städning<span id="arrow"></span> </a>
+                  <!-- Sub Menu -->
+                  <ul class="dropdown-menu animate slideIn" id="mobile_nav_subMenu">
+                    <li><span><a href="#">Städabonnemang</a></span>
+                    <li><span><a href="#">Enstaka hemstädning</a></span></li>
+                    <li><span><a href="#">Storstädning</a></span></li>
+                    <li><span><a href="#">Flyttstädning</a></span></li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Företag</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vanliga frågor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kvalitetsgaranti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="nav_book">BOKA</a>
+            </li>
+          </ul>
+          <!-- Links -->
+        </div>
+        <!-- Collapsible content -->
+      </nav>
+      <!--/.Navbar-->
+      
+      <!-- Slide Image -->
+      <div id="demo" class="carousel slide image_container"  data-ride="carousel">
+        <div class="video">
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="../project/video/1011067334-hd.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- Image of Intercom Message-->
+        <div class="intercom_image">
+          <a href="#">
+            <img src="img/message.png" alt="">
+          </a>
+        </div>
+      </div>
+  </div>
+
+  <!-- BEGIN SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <!-- END SCRIPTS -->
+</body>
+
+</html>
